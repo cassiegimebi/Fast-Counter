@@ -55,7 +55,7 @@ const defaultInventory = [
   { id: '53', name: 'スペースジャグラー', count: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Space-Juggler-Booster-Box-–-Pokemon-Card-Japanese-300x300.jpeg' },
   { id: '54', name: 'レイジングサーフ', count: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Raging-Surf-Booster-Box-Pokemon-Card-Game-Scarlet-Violet-Expansion-Pack-300x300.jpeg' },
   { id: '55', name: 'ステラミラクル', count: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Stellar-Miracle-Booster-Box-Japanese-Scarlet-Violet-Expansion-Pack-300x300.png' },
-  { id: '56', name: 'Yu-Gi-Oh Quick Rivals (遊戯王)', count: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
+  { id: '56', name: 'Yu-Gi-Oh Rivals (遊戯王)', count: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
 ];
 
 let inventory = [];
@@ -75,7 +75,7 @@ const i18n = {
   ja: {
     titleMain: "在庫管理",
     resetAll: "すべてリセット",
-    finishCounting: "カウントを完了",
+    finishCounting: "完了",
     titleSummary: "確認",
     exportCsv: "CSV出力",
     exportExcel: "Excel出力",
