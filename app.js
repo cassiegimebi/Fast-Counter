@@ -67,7 +67,7 @@ const i18n = {
     finishCounting: "Finish Counting",
     titleSummary: "Summary",
     exportCsv: "Export CSV",
-    exportPdf: "Export PDF",
+    exportExcel: "Export Excel",
     stock: "Stock",
     total: "Total",
     confirmReset: "Are you sure you want to reset all counts to 0?"
@@ -78,7 +78,7 @@ const i18n = {
     finishCounting: "カウントを完了",
     titleSummary: "確認",
     exportCsv: "CSV出力",
-    exportPdf: "PDF出力",
+    exportExcel: "Excel出力",
     stock: "在庫数",
     total: "合計",
     confirmReset: "すべてのカウントを0にリセットしてもよろしいですか？"
@@ -110,7 +110,7 @@ const btnReset = document.getElementById('btn-reset');
 const btnFinish = document.getElementById('btn-finish');
 const btnBack = document.getElementById('btn-back');
 const btnExportCsv = document.getElementById('btn-export-csv');
-const btnExportPdf = document.getElementById('btn-export-pdf');
+const btnExportExcel = document.getElementById('btn-export-excel');
 
 // Initialize
 function init() {
@@ -281,31 +281,28 @@ btnExportCsv.addEventListener('click', () => {
   document.body.removeChild(link);
 });
 
-// PDF Export
-btnExportPdf.addEventListener('click', () => {
-  const bottomAction = summaryScreen.querySelector('.bottom-action');
-  const btnBack = document.getElementById('btn-back');
-  
-  // Hide UI elements from PDF
-  if(bottomAction) bottomAction.style.display = 'none';
-  if(btnBack) btnBack.style.display = 'none';
-  
+// Excel Export
+btnExportExcel.addEventListener('click', () => {
   const now = new Date();
-  const dateStr = now.toISOString().split('T')[0];
+  const dateStr = now.toISOString().replace('T', ' ').substring(0, 19);
 
-  const opt = {
-    margin:       15,
-    filename:     `inventory_summary_${dateStr}.pdf`,
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
+  // Prepare data for SheetJS
+  const data = inventory.map(item => ({
+    'Item Name': item.name,
+    'Count': item.count,
+    'Timestamp': dateStr
+  }));
 
-  html2pdf().set(opt).from(summaryScreen).save().then(() => {
-    // Restore UI elements
-    if(bottomAction) bottomAction.style.display = 'flex';
-    if(btnBack) btnBack.style.display = 'flex';
-  });
+  // Create a new workbook and worksheet
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.json_to_sheet(data);
+
+  // Add worksheet to workbook
+  XLSX.utils.book_append_sheet(wb, ws, "Inventory");
+
+  // Format filename with date
+  const fileDateStr = now.toISOString().split('T')[0];
+  XLSX.writeFile(wb, `inventory_summary_${fileDateStr}.xlsx`);
 });
 
 const btnLang = document.getElementById('btn-lang');

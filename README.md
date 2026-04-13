@@ -17,4 +17,4 @@ Since this app is a purely frontend static website, no build process is required
 - **HTML5**
 - **CSS3** (Responsive, Custom Properties)
 - **Vanilla JavaScript** (ES6)
-- **html2pdf.js** (For PDF Export)
+- **SheetJS** (For Excel .xlsx Export)

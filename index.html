@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- HTML2PDF CDN for PDF export -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- SheetJS CDN for Excel export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8ABkFez/A/81eagUoMh/x2ItE23A2iM+1AAR12C1gB81m/QhK7kO/jS4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
   <div id="app">
@@ -49,7 +49,7 @@
 
       <div class="bottom-action" style="gap: 12px;">
         <button id="btn-export-csv" class="secondary-button" style="flex:1" data-i18n="exportCsv">Export CSV</button>
-        <button id="btn-export-pdf" class="primary-button" style="flex:1" data-i18n="exportPdf">Export PDF</button>
+        <button id="btn-export-excel" class="primary-button" style="flex:1" data-i18n="exportExcel">Export Excel</button>
       </div>
     </section>
   </div>
