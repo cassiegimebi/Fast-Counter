@@ -1,0 +1,22 @@
+# Operating System files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Deployment and Build
+build/
+dist/
+
+# Env
+.env
+.env.local
