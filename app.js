@@ -1,4 +1,4 @@
-// Default Japanese Pokémon Boxes Data (Images point to simple placeholders so you can edit them later)
+// Japanese Pokémon Boxes Data (some images point to simple placeholders)
 const defaultInventory = [
   { id: '1', name: 'ニンジャスピナー', count: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '2', name: 'ムニキロゼロ', count: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
