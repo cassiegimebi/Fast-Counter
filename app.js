@@ -1,16 +1,16 @@
 // Pokémon Boxes Data
 const defaultInventory = [
-  { id: '1', name: 'ニンジャスピナー', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: '1', name: 'ニンジャスピナー', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2026/images/m4pkg.jpg' },
   { id: '4', name: 'MEGAドリーム', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/m2a.jpg' },
-  { id: '5', name: 'インフェルノX', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
-  { id: '6', name: 'メガシンフォニヤ', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: '5', name: 'インフェルノX', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/M2.jpg' },
+  { id: '6', name: 'メガシンフォニヤ', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/M1S.jpg' },
   { id: '7', name: 'メガブレイブ', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '9', name: 'ホワイトフレア', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/White-Flare-Booster-box-2025-300x300.jpeg' },
   { id: '10', name: 'ブラックボルト', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Black-Bolt-Booster-Box-–-2025-Japanese-Edition-300x300.jpeg' },
   { id: '12', name: 'ロケット団の栄光', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Glory-of-Team-Rocket-Booster-Box-Japanese-Pokemon-Card-300x300.jpeg' },
   { id: '13', name: '熱風のアリーナ', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Heat-Wave-Arena-12-boxes【With-PROMO】-300x300.jpeg' },
   { id: '15', name: 'バトルパートナーズ', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Battle-Partners-Scarlet-Violet-Expansion-Pack-–-【With-PROMO】-300x300.png' },
-  { id: '2', name: 'ムニキロゼロ', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: '2', name: 'ムニキロゼロ', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/m3.jpg' },
   { id: '16', name: 'テラスタルフェス', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '18', name: '超電ブレイカー', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Super-Electric-Breaker-Booster-Box-Scarlet-Violet-Expansion-Pack-300x300.jpeg' },
   { id: '17', name: '楽園ドラゴーナ', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Japanese-Paradise-Dragona-Booster-Box-300x300.jpeg' },
@@ -63,7 +63,7 @@ const defaultInventory = [
   { id: '58', name: 'ウルトラフォース', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '64', name: 'ウルトラサン', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '62', name: 'GXバトルブースト', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
-  { id: '59', name: 'the best of XY', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: '59', name: 'The best of XY', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '56', name: 'Yu-Gi-Oh Quick Rivals (遊戯王)', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
 ];
 
@@ -84,7 +84,12 @@ const i18n = {
     stock: "Stock",
     total: "Total",
     confirmReset: "Are you sure you want to reset all counts to 0?",
-    searchPlaceholder: "Search items..."
+    searchPlaceholder: "Search items...",
+    headerItemName: "Item Name",
+    headerSealedCount: "Sealed Count",
+    headerUnsealedCount: "Unsealed Count",
+    headerCount: "Count",
+    headerTimestamp: "Timestamp"
   },
   ja: {
     titleMain: "在庫管理",
@@ -99,7 +104,12 @@ const i18n = {
     stock: "在庫数",
     total: "合計",
     confirmReset: "すべてのカウントを0にリセットしてもよろしいですか？",
-    searchPlaceholder: "アイテムを検索..."
+    searchPlaceholder: "アイテムを検索...",
+    headerItemName: "アイテム名",
+    headerSealedCount: "在庫数 (シュリンクあり)",
+    headerUnsealedCount: "在庫数 (シュリンクなし)",
+    headerCount: "在庫数",
+    headerTimestamp: "日時"
   }
 };
 
@@ -354,7 +364,8 @@ btnBack.addEventListener('click', () => {
 
 // CSV Export
 btnExportCsv.addEventListener('click', () => {
-  const headers = ['Item Name', 'Sealed Count', 'Unsealed Count', 'Timestamp'];
+  const t = i18n[currentLang];
+  const headers = [t.headerItemName, t.headerSealedCount, t.headerUnsealedCount, t.headerTimestamp];
   const now = new Date();
   
   // Create ISO string or readable format
@@ -388,18 +399,19 @@ btnExportCsv.addEventListener('click', () => {
 btnExportExcel.addEventListener('click', () => {
   const now = new Date();
   const dateStr = now.toISOString().replace('T', ' ').substring(0, 19);
+  const t = i18n[currentLang];
 
   // Prepare data for SheetJS
   const dataSealed = inventory.map(item => ({
-    'Item Name': item.name,
-    'Count': item.count,
-    'Timestamp': dateStr
+    [t.headerItemName]: item.name,
+    [t.headerCount]: item.count,
+    [t.headerTimestamp]: dateStr
   }));
 
   const dataUnsealed = inventory.map(item => ({
-    'Item Name': item.name,
-    'Count': item.countUnsealed,
-    'Timestamp': dateStr
+    [t.headerItemName]: item.name,
+    [t.headerCount]: item.countUnsealed,
+    [t.headerTimestamp]: dateStr
   }));
 
   // Create a new workbook and worksheets
