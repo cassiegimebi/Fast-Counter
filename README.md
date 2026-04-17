@@ -6,8 +6,8 @@ A lightweight, mobile-friendly web application designed for card shops to quickl
 - **Offline Capable:** Runs entirely in the browser using Vanilla JavaScript with no build steps or backend servers required.
 - **Auto-Saving:** App session counts are automatically preserved using `localStorage` so you never lose your progress if you close the page accidentally.
 - **Bilingual Interface:** Includes a toggle for English / Japanese (`EN/JA`) labels on the fly.
-- **Mac / Apple Aesthetic:** Designed with a clean, smooth, user-friendly interface.
-- **Export to CSV & PDF:** Finish your session and instantly download a `.csv` spreadsheet or an A4 `.pdf` document summarizing all your box counts.
+- **Clean Aesthetic:** Designed with a smooth, user-friendly interface.
+- **Export to CSV & XLSX:** Finish your session and instantly download a `.csv` spreadsheet or an A4 `.pdf` document summarizing all your box counts.
 - **Official Imagery:** Features official placeholder imagery synced directly from the Pokémon Center Japan store where available.
 
 ## Deployment / Usage
