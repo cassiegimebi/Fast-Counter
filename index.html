@@ -18,12 +18,19 @@
     <section id="main-screen" class="screen active">
       <header class="app-header">
         <div style="display: flex; align-items: center; gap: 12px;">
+          <button id="btn-main-back" class="icon-button hidden">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
           <button id="btn-lang" class="icon-button" style="border:1px solid var(--border); padding:4px 8px; font-size:0.875rem; font-weight:600;">EN/JA</button>
-          <h1 data-i18n="titleMain">Inventory</h1>
+          <h1 id="title-main" data-i18n="titleSealed">Inventory (Sealed)</h1>
         </div>
         <button id="btn-reset" class="icon-button text-button" data-i18n="resetAll">Reset All</button>
       </header>
       
+      <div class="search-container">
+        <input type="text" id="search-input" class="search-field" data-i18n-placeholder="searchPlaceholder" placeholder="Search items..." />
+      </div>
+
       <main class="list-container" id="inventory-list">
         <!-- Items will be dynamically injected here -->
       </main>
