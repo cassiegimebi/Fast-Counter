@@ -55,6 +55,7 @@ const defaultInventory = [
   { id: '996', name: '一撃マスター', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '14', name: '連撃マスター', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '41', name: 'シャイニースターV', count: 0, countUnsealed: 0, image: 'https://pokemoncenterjapan.com/wp-content/uploads/2025/07/Shiny-Star-V-Expansion-Box-–-Pokemon-Card-Japanese-300x300.jpeg' },
+  { id: '998', name: '仰天のボルテッカー', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2020/images/S4_PKG.jpg' },
   { id: '50', name: '伝説の鼓動', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '8', name: 'ムゲンゾーン', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '21', name: 'ソードV', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
