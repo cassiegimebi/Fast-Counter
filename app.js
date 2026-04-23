@@ -70,7 +70,7 @@ const defaultInventory = [
   { id: '64', name: 'ウルトラサン', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '62', name: 'GXバトルブースト', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '59', name: 'XY・XY BREAKシリーズ The best of XY LIMIT OVER COLLECTION', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/xy/best_of_xy/images/20170330/SM_XY_pillow_1221.jpg' },
-  { id: '56', name: 'リミットオーバーコレクション ライバルズ', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
+  { id: '56', name: 'リミットオーバーコレクション ライバルズ Limit over rivals YuGiOh', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
 
 ];
 
