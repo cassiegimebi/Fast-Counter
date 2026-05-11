@@ -72,7 +72,12 @@ const defaultInventory = [
   { id: '64', name: 'ウルトラサン', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '62', name: 'GXバトルブースト', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '59', name: 'XY・XY BREAKシリーズ The best of XY LIMIT OVER COLLECTION', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/xy/best_of_xy/images/20170330/SM_XY_pillow_1221.jpg' },
-  { id: '56', name: 'リミットオーバーコレクション ライバルズ Limit over rivals YuGiOh', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' }
+  { id: '56', name: 'リミットオーバーコレクション ライバルズ Limit over rivals YuGiOh', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=YGO\nRivals' },
+  { id: ‘123’, name: 'EGGHEAD CRISIS EB04', count: 0, countUnsealed: 0, image: 'https://cdn.snkrdunk.com/upload_bg_removed/20260130074117-0.webp?size=l' },
+  { id: ‘124’, name: '神の島の冒険 OP15', count: 0, countUnsealed: 0, image: 'https://cdn.snkrdunk.com/upload_bg_removed/20260227120811-0.webp?size=l' },
+  { id: ’125’, name: '受け継がれる意志OP13', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: ‘126’, name: '神速の拳 OP11', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
+  { id: ‘127’, name: '新たなる皇帝 OP09', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' }
 
 ];
 
