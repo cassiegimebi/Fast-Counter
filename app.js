@@ -1,5 +1,6 @@
 // Pokémon Boxes Data
 const defaultInventory = [
+  { id: '140', name: 'アビスアイ', count: 0, countUnsealed: 0, image: 'https://placehold.co/150x150/fdfdfd/333333?text=Box' },
   { id: '1', name: 'ニンジャスピナー', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2026/images/m4pkg.jpg' },
   { id: '2', name: 'ムニキスロゼロ', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/m3.jpg' },
   { id: '4', name: 'MEGAドリーム', count: 0, countUnsealed: 0, image: 'https://www.pokemon-card.com/products/2025/images/m2a.jpg' },
