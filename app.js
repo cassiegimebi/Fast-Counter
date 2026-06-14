@@ -174,6 +174,7 @@ const btnFinish = document.getElementById('btn-finish');
 const btnBack = document.getElementById('btn-back');
 const btnExportCsv = document.getElementById('btn-export-csv');
 const btnExportExcel = document.getElementById('btn-export-excel');
+const btnAudit = document.getElementById('btn-audit');
 
 if (searchInput) {
   searchInput.addEventListener('input', () => {
@@ -467,6 +468,29 @@ if (btnLang) {
       renderSummaryList();
     }
   });
+}
+
+  // recore Audit
+btnAudit.addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.xlsx,.xls,.csv';
+    input.onchange = e => {
+      const file = e.target.files[0];
+      if (file) {  
+        auditRecore(file);
+       }
+    };
+    input.click();
+});
+
+async function auditRecore(file) {
+
+    alert(
+        "Selected: " +
+        file.name
+    );
+
 }
 
 // Start the app
